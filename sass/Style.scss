@@ -1,0 +1,244 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+$color-1:rgb(49, 146, 146);
+$color-2: rgb(228, 97, 74);
+$color-3: rgb(255, 255, 255);
+
+.fuente {
+	font-family: 'Roboto', sans-serif;
+}
+.header {
+	background-color: $color-1;
+	height: 100px;
+	padding: 20px;
+	border-bottom: 2px solid #fff;
+	top: 0;
+}
+.header_logo {
+	float: left;
+	img {
+		width: 150px;
+		height: auto;
+	}
+}
+.header_menu {
+	margin-right: 100px;
+	padding-top: 20px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	ul {
+		display: flex;
+		list-style: none;
+		&:hover {
+			color: $color-2;
+		}
+		li {
+			margin: 0 15px;
+			text-decoration: none;
+			ul.submenu {
+				display: none;
+				background-color: $color-1;
+			}
+			&:hover {
+				ul.submenu {
+					display: block;
+					position: absolute;
+				}
+			}
+			a {
+				&:hover {
+					color: $color-2;
+				}
+			}
+		}
+	}
+}
+.ProductosP {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 30px;
+}
+.principales {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+.box-model {
+	border: 10px #000;
+	margin: 50px;
+	background-color: $color-3;
+	width: auto;
+	height: 350px;
+	display: inline-block;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.img_productos {
+	height: 300px;
+	float: left;
+	display: inline block;
+	transition: all 1s;
+	&:hover {
+		height: 350px;
+	}
+}
+.productos_titulos {
+	text-align: center;
+	font-size: 20px;
+	display: block;
+	margin-bottom: 290px;
+}
+#footer {
+	color: papayawhip;
+	background-image: linear-gradient(to bottom, $color-2,$color-1);
+	height: 130px;
+	padding: 20px;
+}
+.footer_redes {
+	height: 50px;
+	display: inline;
+	margin: 10px;
+}
+.footer_logo {
+	width: 150px;
+	height: auto;
+	float: right;
+	display: inline;
+}
+#contacto {
+	background-color: $color-3;
+	padding: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+.contacto_titulo {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 20px;
+}
+#imanes {
+	background-color: $color-3;
+	padding: 30px;
+	padding-bottom: 30px;
+}
+.img_imanes {
+	height: 300px;
+	float: left;
+	display: inline block;
+}
+.titulo_imanes {
+	text-align: center;
+	font-size: 20px;
+	display: block;
+	margin-bottom: 290px;
+}
+.imanes_titulo {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 30px;
+}
+#packs {
+	background-color:$color-3;
+	padding: 30px;
+	padding-bottom: 30px;
+}
+.packs_titulo {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 40px;
+}
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	justify-items: center;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.producto_pack {
+	height: 300px;
+}
+#stickers {
+	background-color: $color-3;
+	padding: 30px;
+	padding-bottom: 30px;
+}
+.titulo_diseños {
+	text-align: center;
+}
+.diseños {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	ol {
+		list-style-type: none;
+	}
+}
+.tabla {
+	background-color: white;
+}
+.submenu {
+	list-style: none;
+	display: flex;
+	flex-flow: row;
+}
+.imgdiseños {
+	height: 200px;
+	margin: 10px;
+}
+#tazas {
+	background-color: $color-3;
+	padding: 30px;
+	padding-bottom: 30px;
+}
+.tazas_titulo {
+	text-align: center;
+	font-size: 30px;
+	display: block;
+}
+.img_tazas {
+	height: 300px;
+	float: center;
+	display: inline block;
+}
+.tazas_titulos {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 20px;
+}
+#vinilos {
+	background-color: $color-3;
+	padding: 30px;
+	padding-bottom: 50px;
+}
+.titulo_vinilos {
+	text-align: center;
+	font-size: 30px;
+}
+.img_vinilos {
+	height: 300px;
+}
+.vinilos_titulos {
+	margin-top: 20px;
+	font-size: 20px;
+}
+.vinilos_display {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+.vinilos_productos {
+	display: flex;
+	flex-flow: column;
+	padding-bottom: 30px;
+}
+
